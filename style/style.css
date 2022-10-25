@@ -1,0 +1,295 @@
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+.container{
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.flex, .info_flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_li{
+  display: inline-block;
+}
+
+.nav_li:not(:first-of-type){
+  margin-left: 62px;
+}
+
+.nav_link{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #1C1C1C;
+  text-decoration: none;
+}
+
+.nav_link:hover{
+  color: black;
+  transition: .3s;
+}
+
+.btn{
+  padding: 13px 34px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #FFFFFF;
+  background: #6F2CFF;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background: #7a3cff;
+  transition: .5s;
+}
+
+.main{
+  background: #F6BED9;
+}
+
+.main_img{
+  padding: 59px 0;
+}
+
+h1{
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 61px;
+  color: #000000;
+}
+
+.h1_blue{
+  color: #6F2DFF;
+}
+
+.main_info{
+  max-width: 472px;
+}
+
+.h1_text{
+  max-width: 438px;
+  padding: 18px 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.h1_text_bold{
+  font-weight: 700;
+}
+
+input{
+  box-sizing: border-box;
+  margin-right: 9px;
+  padding-top: 13px;
+  padding-bottom: 11px;
+  padding-left: 26px;
+  min-width: 268px;
+  background: #FFFFFF;
+  border: 1px solid #6F2CFF;
+  border-radius: 28px;
+}
+
+.section_grow{
+  margin-top: 136px;
+  margin-bottom: 167px;
+}
+
+.section_grow_title, .info_title{
+  max-width: 415px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 45px;
+  color: #1C1C1C;
+}
+
+.section_grow_block{
+  gap: 34px;
+}
+
+.section_grow_item{
+  max-width: 334px;
+  text-align: center;
+}
+
+.section_grow_item_title{
+  padding-top: 35px;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.section_grow_item_text{
+  padding: 28px 57px 82px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #6F2CFF;
+}
+
+.river_island{
+  background: #FFFFFF;
+  border-radius: 0px 0px 7px 7px;
+  box-shadow: 0px 2px 4px rgba(192, 192, 192, 0.5);
+}
+
+.info_title{
+  margin: 0 auto 79px;
+}
+
+.info_box{
+  text-align: center;
+  max-width: 316px;
+}
+
+.info_box_title{
+  margin-top: 42px;
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 23px;
+}
+
+.info_box_text{
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.footer{
+  margin-top: 136px;
+  padding: 58px 0;
+  background: #20003C;;
+}
+
+.footer_nav_li{
+  display: inline-block;
+}
+
+.footer_nav_li:not(:first-of-type){
+  margin-left: 74px;
+}
+
+.footer_nav_link{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.footer_nav_link:hover{
+  color: #6F2CFF;
+  transition: .5s;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+
+  .header nav{
+    display: none;
+  }
+
+  .main>.flex{
+    display: inline-block;
+  }
+
+  .main{
+    text-align: center;
+  }
+
+  section.flex{
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .info_flex{
+    flex-direction: column;
+    gap: 65px;
+  }
+
+  .section_info{
+    text-align: center;
+  }
+
+  .info_title{
+    max-width: none;
+  }
+
+  .footer{
+    padding: 15px 5px;
+  }
+
+  footer>.flex{
+    min-height: 100px;
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+
+}
+
+@media screen and (max-width: 767px){
+  input{
+   min-width: 80%;
+   margin-bottom: 10px;
+   margin-right: 0;
+  }
+
+  h1{
+    padding-top: 15px;
+    font-size: 38px;
+    line-height: 42px;
+  }
+
+  .main_img{
+    display: inline-block;
+  }
+
+  .main_img>img{
+    width: 100%;
+  }
+
+  .h1_text{
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .main .btn{
+    min-width: 80%;
+  }
+
+  .section_grow>.flex{
+    flex-direction: column;
+  }
+
+  .footer_nav_li{
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .footer_nav_li:not(:first-of-type) {
+    margin-left: 0;
+  }
+
+  .footer ul{
+    text-align: center;
+  }
+}
